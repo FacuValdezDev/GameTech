@@ -38,6 +38,8 @@ margin-left: 2rem;
 .mainBanner .mainContainer .mainDetail .mainLink:hover{
     background: rgb(248, 179, 51);
     font-size: 1.2rem;
+    
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
 }
 
 .mainBanner .mainContainer .imgContainer img{
