@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.mainBanner {
+    padding: 2rem 2.5rem;
+    width: 100%;
+}
+
+.mainBanner .mainContainer {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mainBanner .mainContainer .mainDetail {
+margin-top:10%;
+margin-left: 2rem;
+}
+.mainBanner .mainContainer .mainDetail h2 {
+    font-size: 4rem;
+    font-weight: 1000;
+    color: #010f1c;
+    font-family: 'Gabarito', sans-serif;
+    margin-right:20%;
+    margin-bottom: 3rem;
+}
+.mainBanner .mainContainer .mainDetail .mainLink {
+    text-decoration: none;
+    color: #010f1c;
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.mainBanner .mainContainer .mainDetail .mainLink:hover{
+    background: rgb(248, 179, 51);
+    font-size: 1.2rem;
+}
+
+.mainBanner .mainContainer .imgContainer img{
+    width: 80%;
+    background: transparent;
+    float: right;
+}

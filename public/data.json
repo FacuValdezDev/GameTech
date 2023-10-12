@@ -1,0 +1,9 @@
+[
+    {"id":1, "name": "Ryzen 7", "author":"AMD", "price":4000, "img":"src/assets/img/ryzen7.png"},
+    {"id":2, "name": "Ryzen 7", "author":"AMD", "price":4000, "img":"src/assets/img/ryzen7.png"},
+    {"id":3, "name": "Ryzen 7", "author":"AMD", "price":4000, "img":"src/assets/img/ryzen7.png"},
+    {"id":4, "name": "Ryzen 7", "author":"AMD", "price":4000, "img":"src/assets/img/ryzen7.png"},
+    {"id":5, "name": "Ryzen 7", "author":"AMD", "price":4000, "img":"src/assets/img/ryzen7.png"},
+    {"id":6, "name": "Ryzen 7", "author":"AMD", "price":4000, "img":"src/assets/img/ryzen7.png"}
+
+]
