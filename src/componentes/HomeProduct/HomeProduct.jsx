@@ -1,4 +1,4 @@
-const OutletProduct = [
+const HomeProduct = [
   {
     id: "1",
     name: "Ryzen 3 3200G 4.6GHz Turbo + Radeon Vega 8 AM4 Wraith Stealth Cooler",
@@ -56,53 +56,49 @@ const OutletProduct = [
     img: "../src/assets/img/ryzen7.png",
   },
   {
-    id: "2",
+    id: "9",
     name: "I7 10700",
     price: "1500",
     category: "Cpu",
     img: "../src/assets/img/ryzen7.png",
   },
   {
-    id: "3",
+    id: "10",
     name: "RTX 3080",
     price: "2000",
     category: "Gpu",
     img: "../src/assets/img/ryzen7.png",
   },
-  {
-    id: "4",
-    name: "RX 6700 XT",
-    price: "1800",
-    category: "Gpu",
-    img: "../src/assets/img/ryzen7.png",
-  },
-  {
-    id: "5",
-    name: "X570 ASUS STRIX",
-    price: "1000",
-    category: "Motherboard",
-    img: "../src/assets/img/ryzen7.png",
-  },
-  {
-    id: "6",
-    name: "A520 ASUS STRIX",
-    price: "900",
-    category: "Motherboard",
-    img: "../src/assets/img/ryzen7.png",
-  },
-  {
-    id: "7",
-    name: "16GB DDR4 HYPERX",
-    price: "500",
-    category: "Memory-ram",
-    img: "../src/assets/img/ryzen7.png",
-  },
-  {
-    id: "8",
-    name: "Nvme2g 480GB",
-    price: "300",
-    category: "Disk",
-    img: "../src/assets/img/ryzen7.png",
-  },
 ];
-export default OutletProduct;
+
+export const getProduct = (id) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      //buscar el producto
+      const product = products.find((p) => p.id === id);
+
+      //si existe el producto
+      if (product) {
+        resolve(product);
+      } else {
+        reject("No existe el producto");
+      }
+    }, 1000);
+  });
+};
+
+export const getProducts = (category) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const productFiltered = category
+        ? products.filter(
+            (product) => product.category.toLowerCase() === category,
+          )
+        : products;
+
+      resolve(productFiltered);
+    }, 1000);
+  });
+};
+
+export default HomeProduct;

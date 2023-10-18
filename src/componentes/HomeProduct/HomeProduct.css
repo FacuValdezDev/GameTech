@@ -1,0 +1,41 @@
+.outlet {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15rem;
+  overflow: hidden;
+}
+
+.outlet .outContainer {
+  display: flex;
+  width: calc(250px * 18);
+  perspective: 100px;
+}
+
+.outlet .outContainer .outletBox {
+  cursor: pointer;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.outlet .outContainer .outletBox .outletImg img {
+  width: 70%;
+}
+.outlet .outContainer .outletBox .outletImg img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}

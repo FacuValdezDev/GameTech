@@ -1,4 +1,4 @@
-const HomeProducts = [
+const products = [
   {
     id: "1",
     name: "Ryzen 3 3200G 4.6GHz Turbo + Radeon Vega 8 AM4 Wraith Stealth Cooler",
@@ -56,35 +56,35 @@ const HomeProducts = [
     imgurl: "../src/assets/img/ryzen7.png",
   },
   {
-    id: "2",
+    id: "9",
     name: "I7 10700",
     price: "1500",
     category: "Cpu",
     imgurl: "../src/assets/img/ryzen7.png",
   },
   {
-    id: "3",
+    id: "10",
     name: "RTX 3080",
     price: "2000",
     category: "Gpu",
     imgurl: "../src/assets/img/ryzen7.png",
   },
   {
-    id: "4",
+    id: "11",
     name: "RX 6700 XT",
     price: "1800",
     category: "Gpu",
     imgurl: "../src/assets/img/ryzen7.png",
   },
   {
-    id: "5",
+    id: "12",
     name: "X570 ASUS STRIX",
     price: "1000",
     category: "Motherboard",
     imgurl: "../src/assets/img/ryzen7.png",
   },
   {
-    id: "6",
+    id: "13",
     name: "A520 ASUS STRIX",
     price: "900",
     category: "Motherboard",
@@ -92,14 +92,14 @@ const HomeProducts = [
     quantity: 1,
   },
   {
-    id: "7",
+    id: "14",
     name: "16GB DDR4 HYPERX",
     price: "500",
     category: "Memory-ram",
     imgurl: "../src/assets/img/ryzen7.png",
   },
   {
-    id: "8",
+    id: "15",
     name: "Nvme2g 480GB",
     price: "300",
     category: "Disk",
@@ -107,9 +107,7 @@ const HomeProducts = [
   },
 ];
 
-//getProduct
-
-/* export const getProduct = (id) => {
+export const getProduct = (id) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       //buscar el producto
@@ -138,5 +136,5 @@ export const getProducts = (category) => {
     }, 1000);
   });
 };
- */
-export default HomeProducts;
+
+export default products;

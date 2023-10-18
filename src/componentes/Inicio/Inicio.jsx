@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
-/* import OutletProduct from "../Outlet/Outlet"; */
+import HomeProduct from "../HomeProduct/HomeProduct";
+
+import "../HomeProduct/HomeProduct.css";
 import "./Inicio.css";
-import HomeProducts from "../Services/services";
 
 const Home = () => {
-  const [HomeProducts, setHomeProducts] = useState(HomeProducts);
   return (
     <div>
       <div className="mainBanner">
@@ -69,11 +69,11 @@ const Home = () => {
       </div>
       <div className="outlet">
         <div className="outContainer">
-          {HomeProducts.map((curElm) => {
+          {HomeProduct.map((curElm) => {
             return (
               <div className="outletBox" key={curElm.id}>
                 <div className="outletImg">
-                  <img src={curElm.Img} alt={curElm.Title} />
+                  <img src={curElm.img} alt={curElm.name} />
                 </div>
               </div>
             );
@@ -84,4 +84,4 @@ const Home = () => {
   );
 };
 
-export default Inicio;
+export default Home;
