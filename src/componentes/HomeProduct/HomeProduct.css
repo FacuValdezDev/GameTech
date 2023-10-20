@@ -9,6 +9,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-family: roboto;
+  border-bottom: 1px solid #e2e0e0;
+  padding-bottom: 3rem;
 }
 .outlet .outContainer {
   display: flex;
@@ -70,9 +74,14 @@
   color: #fff;
 }
 
-.outlet .outContainer .outletBox .outDetail {
+.outlet .outContainer .outletBox .outDetail p {
+  color: #9a9a9a;
+  font-size: 14px;
 }
-
+.outlet .outContainer .outletBox .outDetail h3 {
+  color: #010f1c;
+  font-family: gabarito;
+}
 .outlet .outContainer .sldLeft,
 .sldRigth {
   font-size: 50px;
