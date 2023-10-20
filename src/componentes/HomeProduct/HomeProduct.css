@@ -1,41 +1,98 @@
 .outlet {
-  display: grid;
-  place-items: center;
-  margin: auto;
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  margin-top: 15rem;
-  overflow: hidden;
+  padding: 2rem 3rem;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6rem;
 }
-
+.outlet .outTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
 .outlet .outContainer {
   display: flex;
-  width: calc(250px * 18);
-  perspective: 100px;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: transform 0.5s ease;
 }
-
 .outlet .outContainer .outletBox {
-  cursor: pointer;
-  width: 500px;
+  padding: 1rem 2rem;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #e2e0e0;
+  border-radius: 1.5%;
+  transition: 0.5s;
+}
+.outlet .outContainer .outletBox:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+.outlet .outContainer .outletBox .outletImg {
   display: flex;
-  align-items: center;
-  padding: 15px;
+  justify-content: space-between;
 }
 
 .outlet .outContainer .outletBox .outletImg img {
-  width: 70%;
+  width: 100%;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e0e0;
 }
-.outlet .outContainer .outletBox .outletImg img:hover {
-  transform: scale(1.2);
+
+.outlet .outContainer .outletBox .outletImg .outIcon {
+  position: relative;
+  z-index: 1;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  transition: 0.5s;
+}
+.outlet .outContainer .outletBox:hover .outletImg .outIcon {
+  transform: translateX(-60px);
+}
+.outlet .outContainer .outletBox .outletImg .outIcon li {
+  color: #010f1c;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 10px 10px;
+  list-style: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.5s;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 9));
-  }
+.outlet .outContainer .outletBox .outletImg .outIcon li:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+.outlet .outContainer .outletBox .outDetail {
+}
+
+.outlet .outContainer .sldLeft,
+.sldRigth {
+  font-size: 50px;
+  display: flex;
+  margin-top: 7rem;
+  cursor: pointer;
+  opacity: 1;
+  color: orange;
+  position: absolute;
+}
+
+.outlet .outContainer .sldLeft {
+  left: 3rem;
+}
+.outlet .outContainer .sldRigth {
+  right: 3rem;
+}
+
+.outlet .outContainer .sldLeft:hover,
+.sldRigth:hover {
+  opacity: 0.5;
+  transition: 0.5s;
 }

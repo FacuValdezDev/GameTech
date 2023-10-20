@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
+import { BsCartPlus } from "react-icons/bs";
+import { BsEye } from "react-icons/bs";
+import { AiOutlineHeart } from "react-icons/ai";
+import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
+
 import HomeProduct from "../HomeProduct/HomeProduct";
+import CardSlider from "../CardSlider/CardSlider";
 
 import "../HomeProduct/HomeProduct.css";
 import "./Inicio.css";
@@ -67,19 +73,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="outlet">
-        <div className="outContainer">
-          {HomeProduct.map((curElm) => {
-            return (
-              <div className="outletBox" key={curElm.id}>
-                <div className="outletImg">
-                  <img src={curElm.img} alt={curElm.name} />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <CardSlider />
     </div>
   );
 };
