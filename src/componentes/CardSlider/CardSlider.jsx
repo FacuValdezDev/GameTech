@@ -50,8 +50,9 @@ const CardSlider = (props) => {
               </div>
             </div>
             <div className="outDetail">
+              <p>{curElm.category}</p>
               <h3>{curElm.name}</h3>
-              <p>${curElm.price}</p>
+              <h4>${curElm.price}</h4>
             </div>
           </div>
         ))}

@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-family: roboto;
   border-bottom: 1px solid #e2e0e0;
   padding-bottom: 3rem;
@@ -81,6 +81,16 @@
 .outlet .outContainer .outletBox .outDetail h3 {
   color: #010f1c;
   font-family: gabarito;
+}
+.outlet .outContainer .outletBox:hover .outDetail h3 {
+  color: rgb(116, 135, 210);
+}
+
+.outlet .outContainer .outletBox .outDetail h4 {
+  margin-top: 2rem;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #9a9a9a;
 }
 .outlet .outContainer .sldLeft,
 .sldRigth {
