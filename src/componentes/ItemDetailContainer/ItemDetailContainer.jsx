@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+/* import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../../Services/services";
 import ItemDetail from "../ItemDetail/ItemDetail";
@@ -25,3 +25,4 @@ const ItemDetailContainer = () => {
 };
 
 export default ItemDetailContainer;
+ */

@@ -1,0 +1,67 @@
+/* Footer.css */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center; /* Añadido para centrar el texto en el footer */
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column; /* Cambiado a column para apilar los elementos */
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.footerDetail {
+  margin-left: 1rem;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcons a {
+  color: #555;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+  color: #0073e6;
+}
+
+/* Agregar estilos para el footerBottom */
+.footerBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.rightsReserved {
+  flex: 1; /* Para ocupar el espacio disponible y centrar */
+}
+
+.contact {
+  flex: 1; /* Para ocupar el espacio disponible y centrar */
+  text-align: right;
+}

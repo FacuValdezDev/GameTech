@@ -28,6 +28,7 @@
   border: 1px solid #e2e0e0;
   border-radius: 1.5%;
   transition: 0.5s;
+  cursor: pointer;
 }
 .outlet .outContainer .outletBox:hover {
   transform: scale(1.1);

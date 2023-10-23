@@ -24,7 +24,7 @@ const NavBar = () => {
         <div className="navContainer">
           <div className="logo">
             <img
-              src="src/assets/img/gametech.png
+              src="src\assets\img\gametech.png
                 "
               alt="logo"
             />
