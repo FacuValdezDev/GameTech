@@ -25,11 +25,7 @@ const NavBar = ({ searchbtn }) => {
       <div className="mainHeader">
         <div className="navContainer">
           <div className="logo">
-            <img
-              src="src\assets\img\gametech.png
-                "
-              alt="logo"
-            />
+            <img src="../src/assets/img/gametech.png" alt="logo" />
           </div>
           <div className="searchBox">
             <input

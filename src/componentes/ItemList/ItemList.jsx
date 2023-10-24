@@ -4,7 +4,7 @@ import { BsCartPlus, BsEye } from "react-icons/bs";
 
 import ItemDetail from "../ItemDetail/ItemDetail";
 import "./ItemList.css";
-const ItemList = ({ product, setProduct }) => {
+const ItemList = ({ product, setProduct, detail }) => {
   const filtterproduct = (product) => {
     const update = ItemDetail.filter((x) => {
       return x.category === product;
@@ -16,9 +16,28 @@ const ItemList = ({ product, setProduct }) => {
   };
   return (
     <div>
+      <div className="modalDetail">
+        <div className="modalContainer">
+          {detail.map((curElm) => {
+            return (
+              <div className="modalBox">
+                <div className="modalImg">
+                  <img src={curElm.img} alt={curElm.name} />
+                </div>
+                <div className="extraDetail">
+                  <h4>{curElm.category}</h4>
+                  <h2>{curElm.name}</h2>
+                  <h3>{curElm.price}</h3>
+                  <button>Agregar al carrito</button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
       <div className="products">
         <h2>Productos</h2>
-        <p>Inicio . Productos</p>
+        <p>Inicio Productos</p>
 
         <div className="productsContainer">
           <div className="filter">
@@ -45,13 +64,13 @@ const ItemList = ({ product, setProduct }) => {
                   <>
                     <div className="product" key={curElm.id}>
                       <div className="productImg">
-                        <img src={curElm.img} alt="" />
+                        <img src={curElm.img} alt={curElm.name} />
                         <div className="productIcon">
                           <li>
                             <BsCartPlus />
                           </li>
                           <li>
-                            <BsEye />
+                            <BsEye onClick={() => view(curElm)} />
                           </li>
                           <li>
                             <AiOutlineHeart />
