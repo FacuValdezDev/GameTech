@@ -68,6 +68,7 @@
   transition: 0.5s;
   margin-bottom: 20px;
   cursor: pointer;
+  margin-right: 20px;
 }
 .products .productsContainer .productBox .productContant .product:hover {
   transform: scale(1);

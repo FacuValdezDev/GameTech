@@ -11,7 +11,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useState } from "react";
 import "./NavBar.css";
 
-const NavBar = () => {
+const NavBar = ({ searchbtn }) => {
   const [search, setSearch] = useState();
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
   return (
@@ -38,7 +38,7 @@ const NavBar = () => {
               placeholder="Encuentre su producto..."
               onChange={(e) => setSearch(e.target.value)}
             />
-            <button>Buscar</button>
+            <button onClick={() => searchbtn(search)}>Buscar</button>
           </div>
           <div className="shopIcons">
             {isAuthenticated && (
