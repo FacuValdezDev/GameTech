@@ -89,7 +89,6 @@ const products = [
     price: "900",
     category: "Motherboard",
     imgurl: "../src/assets/img/ryzen7.png",
-    quantity: 1,
   },
   {
     id: "14",

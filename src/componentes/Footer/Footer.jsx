@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footerContainer">
         <div className="about">
           <div className="logo">
-            <img src="src\assets\img\gametech.png" alt="gametech" />
+            <img src="..src/assets/img/gametech.png" alt="gametech" />
           </div>
           <div className="footerDetail">
             <p>
