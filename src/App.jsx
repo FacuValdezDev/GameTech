@@ -5,12 +5,13 @@ import Rout from "./componentes/Rout/Rout";
 import ItemDetail from "./componentes/ItemDetail/ItemDetail";
 
 import { BrowserRouter } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [product, setProduct] = useState(ItemDetail);
   //detail
   const [detail, setDetail] = useState([]);
+
+  const [close, setClose] = useState(false);
   //filter
   const searchbtn = (product) => {
     const change = ItemDetail.filter((x) => {
@@ -21,7 +22,8 @@ function App() {
 
   //PRODUCT DETAIL
   const view = (product) => {
-    setDetail([{ product }]);
+    setDetail([{ ...product }]);
+    setClose(true);
   };
   return (
     <div>
@@ -32,6 +34,8 @@ function App() {
           setProduct={setProduct}
           detail={detail}
           view={view}
+          close={close}
+          setClose={setClose}
         />
         <Footer />
       </BrowserRouter>

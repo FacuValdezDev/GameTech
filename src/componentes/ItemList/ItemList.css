@@ -185,3 +185,51 @@
   letter-spacing: 1px;
   color: #9a9a9a;
 }
+
+.modalDetail {
+  margin-top: 30px;
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 120%;
+  margin-top: -20%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.24);
+  z-index: 1;
+}
+
+.modalDetail .modalContainer {
+  margin-top: 8%;
+  margin-left: 20%;
+  width: 1000px;
+  height: 550px;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+
+.modalDetail .modalContainer .closeBtn {
+  margin-left: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.modalDetail .modalContainer .modalBox {
+  max-width: 100%;
+  display: flex;
+  padding: 20px 30px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.modalDetail .modalContainer .modalBox .modalImg {
+  padding: 20px 30px;
+  background: #f1f1f1;
+  width: 400px;
+  height: 400px;
+}
+.modalDetail .modalContainer .modalBox .modalImg img {
+  width: 300px;
+  height: 300px;
+}

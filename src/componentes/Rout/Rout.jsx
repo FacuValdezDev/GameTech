@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../Inicio/Inicio";
 import ItemList from "../ItemList/ItemList";
-const Rout = ({ product, setProduct, detail, view }) => {
+const Rout = ({ product, setProduct, detail, view, close, setClose }) => {
   return (
     <div>
       <Routes>
@@ -15,6 +15,8 @@ const Rout = ({ product, setProduct, detail, view }) => {
               setProduct={setProduct}
               detail={detail}
               view={view}
+              close={close}
+              setClose={setClose}
             />
           }
         />
