@@ -12,7 +12,7 @@ import CardSlider from "../CardSlider/CardSlider";
 import "../HomeProduct/HomeProduct.css";
 import "./Inicio.css";
 
-const Home = () => {
+const Home = ({ detail, view, close, setClose }) => {
   return (
     <div>
       <div className="mainBanner">
@@ -73,7 +73,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <CardSlider />
+      <CardSlider view={view} />
     </div>
   );
 };

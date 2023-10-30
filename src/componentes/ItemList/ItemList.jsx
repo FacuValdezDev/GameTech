@@ -31,7 +31,7 @@ const ItemList = ({ product, setProduct, detail, view, close, setClose }) => {
                   <div className="extraDetail">
                     <h4>{curElm.category}</h4>
                     <h2>{curElm.name}</h2>
-                    <h3>{curElm.price}</h3>
+                    <h3>${curElm.price}</h3>
                     <button>Agregar al carrito</button>
                   </div>
                 </div>

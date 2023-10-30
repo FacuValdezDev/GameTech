@@ -215,6 +215,11 @@
   background: none;
   font-size: 1.6rem;
   cursor: pointer;
+  transition: 0.5s;
+}
+.modalDetail .modalContainer .closeBtn:hover {
+  color: orange;
+  transform: scale(1.1);
 }
 .modalDetail .modalContainer .modalBox {
   max-width: 100%;
@@ -227,9 +232,47 @@
   padding: 20px 30px;
   background: #f1f1f1;
   width: 400px;
-  height: 400px;
 }
 .modalDetail .modalContainer .modalBox .modalImg img {
   width: 300px;
-  height: 300px;
+}
+.modalDetail .modalContainer .modalBox .extraDetail {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.modalDetail .modalContainer .modalBox .extraDetail h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 200;
+  color: #9a9a9a;
+  letter-spacing: 1px;
+}
+.modalDetail .modalContainer .modalBox .extraDetail h2 {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #010f1c;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.modalDetail .modalContainer .modalBox .extraDetail h3 {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #010f1c;
+}
+.modalDetail .modalContainer .modalBox .extraDetail button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 18px;
+  color: #fff;
+  background: #010f1c;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.modalDetail .modalContainer .modalBox .extraDetail button:hover {
+  background: orange;
+  transform: scale(1.1);
 }

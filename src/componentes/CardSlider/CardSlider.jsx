@@ -4,11 +4,12 @@ import {
   AiOutlineHeart,
   AiFillLeftCircle,
   AiFillRightCircle,
+  AiOutlineCloseCircle,
 } from "react-icons/ai";
-
+import "./CardSlider.css";
 import HomeProduct from "../HomeProduct/HomeProduct";
 
-const CardSlider = (props) => {
+const CardSlider = ({ detail, view, close, setClose }) => {
   const itemsToShow = 6;
   const items = HomeProduct;
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,7 +42,7 @@ const CardSlider = (props) => {
                 <li>
                   <BsCartPlus />
                 </li>
-                <li>
+                <li onClick={() => view(curElm)}>
                   <BsEye />
                 </li>
                 <li>
@@ -56,7 +57,32 @@ const CardSlider = (props) => {
             </div>
           </div>
         ))}
+
         <AiFillRightCircle className="sldRigth" onClick={handleNextClick} />
+        {close ? (
+          <div className="modalDetail">
+            <div className="modalContainer">
+              <button onClick={() => setClose(false)} className="closeBtn">
+                <AiOutlineCloseCircle />
+              </button>
+              {detail.map((curElm) => {
+                return (
+                  <div className="modalBox">
+                    <div className="modalImg">
+                      <img src={curElm.img} alt={curElm.name} />
+                    </div>
+                    <div className="extraDetail">
+                      <h4>{curElm.category}</h4>
+                      <h2>{curElm.name}</h2>
+                      <h3>${curElm.price}</h3>
+                      <button>Agregar al carrito</button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ) : null}
       </div>
     </div>
   );
