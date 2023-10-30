@@ -73,7 +73,12 @@ const Home = ({ detail, view, close, setClose }) => {
           </div>
         </div>
       </div>
-      <CardSlider view={view} />
+      <CardSlider
+        view={view}
+        detail={detail}
+        close={close}
+        setClose={setClose}
+      />
     </div>
   );
 };

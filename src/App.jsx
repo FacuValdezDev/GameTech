@@ -7,6 +7,8 @@ import ItemDetail from "./componentes/ItemDetail/ItemDetail";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
+  //Cart
+  const [cart, setCart] = useState([]);
   const [product, setProduct] = useState(ItemDetail);
   //detail
   const [detail, setDetail] = useState([]);
@@ -19,6 +21,8 @@ function App() {
     });
     setProduct(change);
   };
+  //Agregar al carrito
+  const addtocart = (product) => {};
 
   //PRODUCT DETAIL
   const view = (product) => {
@@ -36,6 +40,9 @@ function App() {
           view={view}
           close={close}
           setClose={setClose}
+          cart={cart}
+          setCart={setCart}
+          addtocart={addtocart}
         />
         <Footer />
       </BrowserRouter>

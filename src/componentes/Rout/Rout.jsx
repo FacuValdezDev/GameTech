@@ -2,7 +2,18 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../Inicio/Inicio";
 import ItemList from "../ItemList/ItemList";
-const Rout = ({ product, setProduct, detail, view, close, setClose }) => {
+import Cart from "../Cart/Cart";
+const Rout = ({
+  product,
+  setProduct,
+  detail,
+  view,
+  close,
+  setClose,
+  cart,
+  setCart,
+  addtocart,
+}) => {
   return (
     <div>
       <Routes>
@@ -27,9 +38,11 @@ const Rout = ({ product, setProduct, detail, view, close, setClose }) => {
               view={view}
               close={close}
               setClose={setClose}
+              addtocart={addtocart}
             />
           }
         />
+        <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
       </Routes>
     </div>
   );

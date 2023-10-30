@@ -4,7 +4,15 @@ import { BsCartPlus, BsEye } from "react-icons/bs";
 
 import ItemDetail from "../ItemDetail/ItemDetail";
 import "./ItemList.css";
-const ItemList = ({ product, setProduct, detail, view, close, setClose }) => {
+const ItemList = ({
+  product,
+  setProduct,
+  detail,
+  view,
+  close,
+  setClose,
+  addtocart,
+}) => {
   const filtterproduct = (product) => {
     const update = ItemDetail.filter((x) => {
       return x.category === product;
@@ -43,7 +51,7 @@ const ItemList = ({ product, setProduct, detail, view, close, setClose }) => {
 
       <div className="products">
         <h2>Productos</h2>
-        <p>Inicio Productos</p>
+        <p>Inicio &gt; Productos</p>
 
         <div className="productsContainer">
           <div className="filter">
@@ -72,7 +80,7 @@ const ItemList = ({ product, setProduct, detail, view, close, setClose }) => {
                       <div className="productImg">
                         <img src={curElm.img} alt={curElm.name} />
                         <div className="productIcon">
-                          <li>
+                          <li onClick={() => addtocart(curElm)}>
                             <BsCartPlus />
                           </li>
                           <li onClick={() => view(curElm)}>
