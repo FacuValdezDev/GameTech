@@ -40,7 +40,9 @@ const ItemList = ({
                     <h4>{curElm.category}</h4>
                     <h2>{curElm.name}</h2>
                     <h3>${curElm.price}</h3>
-                    <button>Agregar al carrito</button>
+                    <button onClick={() => addtocart(curElm)}>
+                      Agregar al carrito
+                    </button>
                   </div>
                 </div>
               );

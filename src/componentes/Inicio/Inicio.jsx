@@ -4,7 +4,11 @@ import { BsArrowRight } from "react-icons/bs";
 import { BsCartPlus } from "react-icons/bs";
 import { BsEye } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
-import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
+import {
+  AiFillLeftCircle,
+  AiFillRightCircle,
+  AiOutlineCloseCircle,
+} from "react-icons/ai";
 
 import HomeProduct from "../HomeProduct/HomeProduct";
 import CardSlider from "../CardSlider/CardSlider";
@@ -12,9 +16,35 @@ import CardSlider from "../CardSlider/CardSlider";
 import "../HomeProduct/HomeProduct.css";
 import "./Inicio.css";
 
-const Home = ({ detail, view, close, setClose }) => {
+const Home = ({ detail, view, close, setClose, addtocart }) => {
   return (
     <div>
+      {close ? (
+        <div className="modalDetail">
+          <div className="modalContainer">
+            <button onClick={() => setClose(false)} className="closeBtn">
+              <AiOutlineCloseCircle />
+            </button>
+            {detail.map((curElm, index) => {
+              return (
+                <div className="modalBox" key={index}>
+                  <div className="modalImg">
+                    <img src={curElm.img} alt={curElm.name} />
+                  </div>
+                  <div className="extraDetail">
+                    <h4>{curElm.category}</h4>
+                    <h2>{curElm.name}</h2>
+                    <h3>${curElm.price}</h3>
+                    <button onClick={() => addtocart(curElm)}>
+                      Agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ) : null}
       <div className="mainBanner">
         <div className="mainContainer">
           <div className="mainDetail">
@@ -73,12 +103,15 @@ const Home = ({ detail, view, close, setClose }) => {
           </div>
         </div>
       </div>
-      <CardSlider
-        view={view}
-        detail={detail}
-        close={close}
-        setClose={setClose}
-      />
+      <div>
+        <CardSlider
+          view={view}
+          detail={detail}
+          close={close}
+          setClose={setClose}
+          addtocart={addtocart}
+        />
+      </div>
     </div>
   );
 };

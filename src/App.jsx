@@ -21,8 +21,20 @@ function App() {
     });
     setProduct(change);
   };
+
   //Agregar al carrito
-  const addtocart = (product) => {};
+
+  const addtocart = (product) => {
+    const exsit = cart.find((x) => {
+      return x.id === product.id;
+    });
+    if (exsit) {
+      alert("Este producto ya fue agregado a tu carrito");
+    } else {
+      setCart([...cart, { ...product, qty: 1 }]);
+      alert("El producto fue agregado al carrito");
+    }
+  };
 
   //PRODUCT DETAIL
   const view = (product) => {

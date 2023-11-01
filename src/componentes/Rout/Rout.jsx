@@ -21,10 +21,13 @@ const Rout = ({
           path="/"
           element={
             <Home
+              product={product}
+              setProduct={setProduct}
               detail={detail}
               view={view}
               close={close}
               setClose={setClose}
+              addtocart={addtocart}
             />
           }
         />
