@@ -97,8 +97,8 @@ const Cart = ({ cart, setCart }) => {
         </div>
         {cart.length > 0 && (
           <div>
-            <h2 className="totalprice">Precio Total: ${Totalprice}</h2>
-            <button>Finalizar pedido</button>
+            <h2 className="totalPrice">Precio Total: ${Totalprice}</h2>
+            <button className="checkOut">Finalizar pedido</button>
           </div>
         )}
       </div>

@@ -68,6 +68,7 @@
 }
 .cartContainer .cartContant .cartItem .cartImg img {
   width: 15rem;
+  height: 15rem;
 }
 
 .cartContainer .cartContant .cartItem .cartDetail {
@@ -142,4 +143,30 @@
   font-size: 22px;
   color: #db0045;
   cursor: pointer;
+}
+
+.cartContainer .totalPrice {
+  margin-top: 30px;
+  margin-left: 40%;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cartContainer .checkOut {
+  margin-top: 40px;
+  margin-left: 43%;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: orange;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 600;
+}
+.cartContainer .checkOut:hover {
+  transform: scale(1.1);
+
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
 }

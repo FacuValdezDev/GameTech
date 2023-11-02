@@ -44,6 +44,8 @@
   padding: 20px 30px;
   background: #f1f1f1;
   width: 400px;
+  display: flex;
+  justify-content: center;
 }
 .modalDetail .modalContainer .modalBox .modalImg img {
   width: 300px;
