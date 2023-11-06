@@ -55,7 +55,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
             </Link>
           </div>
           <div className="imgContainer">
-            <img src="src\assets\img\banner1.png" alt="computer" />
+            <img src="../src/assets/img/banner1.png" alt="computer" />
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
         <div className="typeContainer">
           <div className="typeBox">
             <div className="typeImg">
-              <img src="src\assets\img\ryzen7-bg.png" alt="cpu" />
+              <img src="../src/assets/img/ryzen7-bg.png" alt="cpu" />
             </div>
             <div className="numType">
               <p>Procesadores</p>
@@ -71,7 +71,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
           </div>
           <div className="typeBox">
             <div className="typeImg">
-              <img src="src\assets\img\ryzen7-bg.png" alt="gpu" />
+              <img src="../src/assets/img/ryzen7-bg.png" alt="gpu" />
             </div>
             <div className="numType">
               <p>Placas de video</p>
@@ -79,7 +79,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
           </div>
           <div className="typeBox">
             <div className="typeImg">
-              <img src="src\assets\img\ryzen7-bg.png" alt="motherboards" />
+              <img src="../src/assets/img/ryzen7-bg.png" alt="motherboards" />
             </div>
             <div className="numType">
               <p>Motherboards</p>
@@ -87,7 +87,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
           </div>
           <div className="typeBox">
             <div className="typeImg">
-              <img src="src\assets\img\ryzen7-bg.png" alt="rams" />
+              <img src="../src/assets/img/ryzen7-bg.png" alt="rams" />
             </div>
             <div className="numType">
               <p>Memoria Ram</p>
@@ -95,7 +95,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
           </div>
           <div className="typeBox">
             <div className="typeImg">
-              <img src="src\assets\img\ryzen7-bg.png" alt="disk" />
+              <img src="../src/assets/img/ryzen7-bg.png" alt="disk" />
             </div>
             <div className="numType">
               <p>Almacenamiento</p>
