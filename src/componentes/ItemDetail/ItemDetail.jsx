@@ -107,3 +107,26 @@ const ItemDetail = [
 ];
 
 export default ItemDetail;
+
+/* 
+import React from "react";
+import { useEffect, useState } from "react";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
+
+const ItemDetail = () => {
+  const [item, setItem] = useState(null);
+  useEffect(() => {
+    const db = getFirestore();
+    const itemRef = doc(db, "items", "29cGn71lReCaZvT08jlN");
+
+    getDoc(itemRef).then((snapshot) => {
+      if (snapshot.exists()) {
+        setItem(snapshot.data());
+      }
+    });
+  }, []);
+  return <div>ItemDetail</div>;
+};
+
+export default ItemDetail;
+ */

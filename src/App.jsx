@@ -3,6 +3,7 @@ import NavBar from "./componentes/NavBar/NavBar";
 import Footer from "./componentes/Footer/Footer";
 import Rout from "./componentes/Rout/Rout";
 import ItemDetail from "./componentes/ItemDetail/ItemDetail";
+import { exportData } from "./services/firebase";
 
 import { BrowserRouter } from "react-router-dom";
 
