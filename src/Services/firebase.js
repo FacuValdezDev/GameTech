@@ -35,7 +35,7 @@ import {
   orderBy,
 } from "firebase/firestore";
 
-import Toast from "toastify-js";
+import products from "./services";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAo2g22KLNgJZ1P6Pia9h46HSUQjk6fKMA",
