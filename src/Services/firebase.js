@@ -1,27 +1,3 @@
-/* // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAo2g22KLNgJZ1P6Pia9h46HSUQjk6fKMA",
-  authDomain: "e-commerse-react-a8cb8.firebaseapp.com",
-  projectId: "e-commerse-react-a8cb8",
-  storageBucket: "e-commerse-react-a8cb8.appspot.com",
-  messagingSenderId: "737301912751",
-  appId: "1:737301912751:web:40fb8bf8c2c42add31485a",
-  measurementId: "G-X0JCPXBTKD",
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const analytics = getAnalytics(app);
- */
 import { initializeApp } from "firebase/app";
 import {
   getFirestore,
@@ -35,16 +11,14 @@ import {
   orderBy,
 } from "firebase/firestore";
 
-import products from "./services";
-
 const firebaseConfig = {
-  apiKey: "AIzaSyAo2g22KLNgJZ1P6Pia9h46HSUQjk6fKMA",
-  authDomain: "e-commerse-react-a8cb8.firebaseapp.com",
-  projectId: "e-commerse-react-a8cb8",
-  storageBucket: "e-commerse-react-a8cb8.appspot.com",
-  messagingSenderId: "737301912751",
-  appId: "1:737301912751:web:40fb8bf8c2c42add31485a",
-  measurementId: "G-X0JCPXBTKD",
+  apiKey: "AIzaSyCTocWRVwAAHlsKqSvESJqrpXZ1bbsUKvM",
+  authDomain: "coder-react-3254b.firebaseapp.com",
+  projectId: "coder-react-3254b",
+  storageBucket: "coder-react-3254b.appspot.com",
+  messagingSenderId: "233155136734",
+  appId: "1:233155136734:web:f20e182fb7c9008e4c864f",
+  measurementId: "G-LGVLXJ9WXB",
 };
 
 const app = initializeApp(firebaseConfig);

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavBar from "./componentes/NavBar/NavBar";
 import Footer from "./componentes/Footer/Footer";
 import Rout from "./componentes/Rout/Rout";
+import ItemList from "./componentes/ItemList/ItemList";
 import ItemDetail from "./componentes/ItemDetail/ItemDetail";
 import { exportData } from "./Services/firebase";
 import { BrowserRouter } from "react-router-dom";
@@ -57,9 +58,6 @@ function App() {
           addtocart={addtocart}
         />
         <Footer />
-        <button type="button" onClick={() => exportData()}>
-          Subir la data
-        </button>
       </BrowserRouter>
     </div>
   );

@@ -1,4 +1,4 @@
-const products = [
+/* const products = [
   {
     id: "1",
     name: "Ryzen 3 3200G 4.6GHz Turbo + Radeon Vega 8 AM4 Wraith Stealth Cooler",
@@ -137,3 +137,4 @@ export const getProducts = (category) => {
 };
 
 export default products;
+ */

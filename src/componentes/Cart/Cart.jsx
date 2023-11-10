@@ -65,7 +65,7 @@ const Cart = ({ cart, setCart }) => {
             return (
               <div className="cartItem" key={curElm.id}>
                 <div className="cartImg">
-                  <img src={curElm.img} alt={curElm.name} />
+                  <img src={curElm.imgurl} alt={curElm.name} />
                 </div>
                 <div className="cartDetail">
                   <div className="cartInfo">

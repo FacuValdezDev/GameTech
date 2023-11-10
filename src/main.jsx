@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+/* import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics"; */
 import App from "./App.jsx";
 import "./index.css";
 import { Auth0Provider } from "@auth0/auth0-react";
 
-const firebaseConfig = {
+/* const firebaseConfig = {
   apiKey: "AIzaSyAo2g22KLNgJZ1P6Pia9h46HSUQjk6fKMA",
   authDomain: "e-commerse-react-a8cb8.firebaseapp.com",
   projectId: "e-commerse-react-a8cb8",
@@ -18,7 +18,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
+ */
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Auth0Provider
     domain="dev-o8drdnbamqi3w0ho.us.auth0.com"
